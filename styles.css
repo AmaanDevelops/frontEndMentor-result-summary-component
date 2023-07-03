@@ -34,8 +34,29 @@ img, picture, svg {
   
 
 body {
-    min-height: 100vh;
     font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-div {
+    text-align: center;
+}
+
+.result-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.result-card {
+    background-color: var(--white);
+    box-shadow: 0.833rem 0.833rem 1.944rem 0.556rem hsla(234, 85%, 45%, 0.05);
+    max-width: 37.5rem;
 }
 
 
@@ -46,6 +67,29 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 3rem;
+}
 
 
 
