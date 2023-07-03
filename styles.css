@@ -8,11 +8,6 @@
     font: inherit;
 }
 
-img, picture, svg {
-    display: block;
-    max-width: 100%;
-}
-
 :root {
     font-size: 18px;
     --light-red: hsl(0, 100%, 67%);
@@ -56,7 +51,7 @@ main {
 .result-card {
     background-color: var(--white);
     box-shadow: 0.833rem 0.833rem 1.944rem 0.556rem hsla(234, 85%, 45%, 0.05);
-    max-width: 37.5rem;
+    min-width: 33.5rem;
     border-radius: 5%;
 }
 
@@ -83,19 +78,68 @@ main {
     margin: 0 auto; 
 }
 
+.result-card-right {
+    text-align: left;
+    padding: 1rem;
+
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.7rem 0.5rem;
+    border-radius: 1vw;
+}
+
+.summary-li {
+    margin-top: 1rem;
+}
 
 
+li:nth-child(1) {
+    background-color: hsla(0, 100%, 67%, 0.08);
+}
 
+li:nth-child(2) {
+    background-color: hsla(39, 100%, 56%, 0.08);
+}
 
+li:nth-child(3) {
+    background-color: hsla(166, 100%, 37%, 0.08);
+}
 
+li:nth-child(4) {
+    background-color: hsla(234, 85%, 45%, 0.08);
+}
 
+.item-1 {
+    color: var(--light-red);
+}
 
+.item-2 {
+    color: var(--orangey-yellow);
+}
 
+.item-3 {
+    color: var(--green-teal);
+}
 
+.item-4 {
+    color: var(--cobalt-blue);
+}
 
-
-
-/**Card left font styles*/
+.continue-button {
+    display: inline-block;
+    cursor: pointer;
+    width: 14.1rem;
+    height: 2.4rem;
+    border-radius: 100vw;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+    margin-left: 0.2rem;
+}
 
 .comment-heading {
     font-size: 1.3rem;
@@ -115,8 +159,6 @@ main {
     font-size: 0.8rem;
 }
 
-
-/**Footer*/
 footer {
     margin-top: 2.5rem;
 }
