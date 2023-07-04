@@ -35,12 +35,9 @@ body {
 main {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.container-div {
-    text-align: center;
 }
 
 .result-card {
@@ -51,48 +48,120 @@ main {
 .result-card {
     background-color: var(--white);
     box-shadow: 0.833rem 0.833rem 1.944rem 0.556rem hsla(234, 85%, 45%, 0.06);
-    min-width: 33.5rem;
-    border-radius: 5%;
+    min-width: 32.5rem;
+    min-height: 24rem;
+    border-radius: 1.5rem;
 }
 
 .result-card-left {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-radius: 5%;
+    border-radius: 1.5rem;
     color: var(--white);
-    padding: 1rem;
+    text-align: center;
 }
 
-.score-container {
+.result-heading {
+    color: var(--pale-blue);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.result-card-left {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score-section {
     border-radius: 50%;
-    height: 8.944rem;
-    width: 8.944rem;
+    height: 9.944rem;
+    width: 9.944rem;
     background-image: repeating-radial-gradient(hsla(256, 72%, 46%), hsla(241, 72%, 46%, 0.3));
-    padding-top: 2.389rem;
 }
 
-.score-container {
-    margin: 2rem auto;
+.score {
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+.out-of {
+    color: hsl(224, 30%, 27%, 0.5);
+    margin-left: 0.2rem;
+}
+
+.score-context {
+    font-size: 0.8rem;
+    color: var(--light-lavender);
+}
+
+.score-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.comment {
+    font-size: 0.8rem;
+    color: var(--light-lavender);
 }
 
 .result-card-right {
-    text-align: left;
-    padding: 1rem;
-
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
 }
 
-.summary-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 0.7rem 0.5rem;
-    border-radius: 0.6rem;
+.summary-heading {
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .summary-li {
-    margin-top: 1rem;
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
+.summary-item {
+    list-style-type: none;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.item-context {
+    display: flex;
+    align-items: center;   
+}
+
+svg {
+    margin: 0 0.5rem;
+}
+
+.continue-button {
+    font-size: 0.9rem;
+    height: 2.5rem;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: var(--dark-gray-blue);
+    color: var(--white);
+}
 
 li:nth-child(1) {
     background-color: hsla(0, 100%, 67%, 0.08);
@@ -108,13 +177,6 @@ li:nth-child(3) {
 
 li:nth-child(4) {
     background-color: hsla(234, 85%, 45%, 0.08);
-}
-
-.item-context {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
 }
 
 .item-1 {
@@ -133,57 +195,6 @@ li:nth-child(4) {
     color: var(--cobalt-blue);
 }
 
-.continue-button {
-    display: inline-block;
-    cursor: pointer;
-    width: 14.1rem;
-    height: 2.4rem;
-    border-radius: 100vw;
-    background-color: var(--dark-gray-blue);
-    color: var(--white);
-    margin-left: 0.2rem;
-}
-
-.result-card-heading {
-    color: var(--pale-blue);
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-
-.summary-heading {
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-
-.comment-heading {
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-
-.out-of {
-    color: hsl(224, 30%, 27%, 0.5);
-    margin-left: 0.2rem;
-}
-
-.comment {
-    font-size: 0.8rem;
-    color: var(--light-lavender);
-}
-
-.score {
-    font-size: 2.7rem;
-    font-weight: 800;
-}
-
-.score-context {
-    font-size: 0.8rem;
-    color: var(--light-lavender);
-}
-
 footer {
     margin-top: 2rem;
 }
-
-
-
