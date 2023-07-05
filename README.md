@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://amaandevelops.github.io/frontEndMentor-result-summary-component/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/css-grids-flexbox-and-media-queries-all-for-responsive-layout-iOtqDNt2uG)
+- Live Site URL: [live site](https://amaandevelops.github.io/frontEndMentor-result-summary-component/)
 
 ## My process
 
