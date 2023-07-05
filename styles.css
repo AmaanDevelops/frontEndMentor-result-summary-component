@@ -34,6 +34,16 @@
     --fw-bld: 800;
 }
 
+
+body::-webkit-scrollbar {
+ width: 0.5rem;   
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
+    border-radius: 2rem;
+}
+
 body {
     font-family: "Hanken Grotesk", sans-serif;
 }
