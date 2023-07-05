@@ -1,96 +1,205 @@
-# Frontend Mentor - Results summary component
+# Frontend Mentor - Results summary component solution
 
-![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this results summary component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-We provide the data for the results in a local `data.json` file. So you can use that to add the results and total score dynamically if you choose.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./screenshot.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://amaandevelops.github.io/frontEndMentor-result-summary-component/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+### Built with
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Media Quries
+- Mobile-first workflow
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
-## Building your project
+### What I learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+During the process of completing this coding challenge, I had the opportunity to dive deep into various aspects of front-end development. Here are the key learnings from my experience:
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Flexbox Mastery: I gained extensive practice in utilizing Flexbox for layout design, enabling me to create flexible and responsive designs with ease.
 
-## Deploying your project
+Harnessing CSS Custom Properties: I learned how to leverage CSS custom properties (CSS variables) to centralize values and improve code efficiency and maintainability.
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+Exploring CSS Grid and Building Foundations: I developed a solid foundation in CSS Grid, enabling me to create grid-based layouts and organize designs more effectively.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Beginning Responsive Design Journey: I started my journey towards understanding and implementing responsive design principles, experimenting with media queries to adapt layouts to different devices.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+Expanding Knowledge of CSS Selectors: I deepened my knowledge of advanced CSS selectors, allowing me to target elements precisely and apply styles efficiently.
 
-## Create a custom `README.md`
+```css
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+:root {
+    font-size: 18px;
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --light-slate-blue-bg: hsl(252, 100%, 67%);
+    --light-royal-blue-bg: hsl(241, 81%, 54%);
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    
+    --fs-t: 0.77rem;
+    --fs-sm: 0.85rem;
+    --fs-m:  0.925rem; 
+    --fs-l:  1.425rem;
+    --fs-xl: 2.5rem;
+    
+    --fw-r:  500;
+    --fw-b:  700;
+    --fw-bld: 800;
+}
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+.result-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
 
-## Submitting your solution
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+@media (max-width: 740px) {
+    :root {
+        --fs-t: 0.77rem;
+        --fs-sm: 0.85rem;
+        --fs-m:  1.25rem; 
+        --fs-l:  1.525rem;
+        --fs-xl: 2.3rem;
+    }
+    
+    main {
+        justify-content: flex-start;
+        align-items: stretch;
+    }
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+    .result-card {
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.3fr;
+    }
 
-## Sharing your solution
+    .result-card-left {
+        border-radius: 0 0 2rem 2rem;
+    }
 
-There are multiple places you can share your solution:
+    .score-section {
+        height: 6.544rem;
+        width: 6.544rem;
+    }
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+    .summary-item {
+        margin: 0;
+    }
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+    footer {
+        text-align: center;
+        font-size: 0.8rem;
+        margin-top: 0;
+        padding: 1rem;
+    }
+}
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+@media (max-width: 380px) {
+    :root {
+        --fs-t: 0.6rem;
+        --fs-sm: 0.8rem;
+        --fs-m:  1rem; 
+        --fs-l:  1.2rem;
+        --fs-xl: 2rem;
+    }
 
-## Got feedback for us?
+    .score-section {
+        height: 6.444rem;
+        width: 6.444rem;
+    }
+    
+    .comment-heading {
+        margin-bottom: 0.4rem;
+    }
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+    .continue-button {
+        height: 2.3rem;
+    }
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+    .summary-item {
+        height: 2rem;
+        padding: 0.7rem 0.6rem;
+        margin: 0.3rem 0;
+    }    
+}
 
-**Have fun building!** 🚀
+li:nth-child(1) {
+    background-color: hsla(0, 100%, 67%, 0.08);
+}
+
+li:nth-child(2) {
+    background-color: hsla(39, 100%, 56%, 0.08);
+}
+
+li:nth-child(3) {
+    background-color: hsla(166, 100%, 37%, 0.08);
+}
+
+li:nth-child(4) {
+    background-color: hsla(234, 85%, 45%, 0.08);
+}
+
+```
+
+### Continued development
+
+Completing this coding challenge has sparked my enthusiasm for continuous growth and improvement. Moving forward, I have identified the following areas to focus on:
+
+Advancing CSS Grid skills: I will delve deeper into CSS Grid, exploring advanced features like grid auto-placement and nested grids to create more dynamic and responsive layouts.
+
+Refining responsive design techniques: I plan to deepen my understanding of media queries and explore advanced responsive design patterns to ensure seamless experiences across devices.
+
+Mastering CSS selectors: By expanding my knowledge of CSS selectors, including combinators and pseudo-elements, I aim to write more efficient and targeted stylesheets.
+
+Enhancing layout design skills: I will invest time in studying modern layout techniques like Flexbox and CSS Grid, as well as exploring emerging frameworks and libraries.
+
+
+### Useful resources
+
+- [Resource 1](https://www.youtube.com/@WebDevSimplified) - I want to express my gratitude to Kyle from Web Dev Simplified for his invaluable tutorials on flexbox and CSS grids. His guidance helped me gain mastery in flexbox for layout design and explore CSS grids, allowing me to create flexible and organized designs.
+- [Resource 2](https://www.youtube.com/@KevinPowell) - I would like to extend my gratitude to Kevin Powell for his tremendous help in improving my understanding of CSS. Through his tutorials, Kevin not only explained the "how" but also delved into the "why" behind CSS concepts. His guidance on conventions and writing high-quality CSS has been invaluable in my learning journey.
+
+## Author
+- Frontend Mentor - [@AmaanDevelops](https://www.frontendmentor.io/profile/amaandevelops)
+- Twitter - [@AmaanDevelops](https://www.twitter.com/amaandevelops)
